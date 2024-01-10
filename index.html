@@ -3,42 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Mr Potato Head Maker</title>
+
+    <title>Mr. Potato Head Maker</title>
 </head>
 <body>
+    <h1>Build Your Potato</h1>
+    <hr>
 
-    <h2>Form</h2>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" required><br><br>
-        <label for="address">Address:</label>
-        <input type="text" id="address" required><br><br>
-        <label for="phone">Phone Number:</label>
-        <input type="text" id="phone" placeholder="(416) 555-5555"><br><br>
-        <button type="button" onclick= "formValidator()" id="submitButton">Submit</button>
-    </form>
-    <div id="display"></div>
+    <button id="body">BODY</button>
+    <button id="eyes">EYES</button>
+    <button id="hat">HAT</button>
+    <button id="mouth">MOUTH</button>
+    <button id="nose">NOSE</button>
+    <button id="save">DOWNLOAD</button>
+    <div id="imageContainer">
+        <img id="image1" src="assets/bodyy.png" alt="Image 1">
+        <img id="image2" src="assets/eyes.png" alt="Image 2">
+        <img id="image3" src="assets/hat.png" alt="Image 3">
+        <img id="image4" src="assets/mouth.png" alt="Image 4">
+        <img id="image5" src="assets/nose.png" alt="Image 5">
+    </div>
+
+    <br>
+
+    <h1>Expand Image</h1>
+    <hr>
+    <p>Hover over image to see what happens! </p>
+    <div class="hover-container">
+        <img id="cat" src="assets/cat.png" alt="cat" width="100px">
+        <button id= "unexpand"> UNEXPAND</button>   
+    </div>
 
     <br>
     <hr>
 
-    <h2>Counter</h2>
-   
-    <textarea id="text" oninput="count()" rows="10" cols="40"></textarea>
-    <p>Letter Count: <span id="letterCount">0</span></p>
-    <p>Character Count: <span id="charCount">0</span></p>
 
-    <br>
-    <hr>
 
-    <h2>My Bookmarks</h2>
-
-    <ul id="bookmarks">
-
-    </ul>
     
 </body>
+
+<footer>&copy; Potatoe maker and image expander. Alysha Cezette-Thompson</footer>
 
 <script src="script.js"></script>
 

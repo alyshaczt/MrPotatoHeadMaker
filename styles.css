@@ -1,11 +1,87 @@
 body {
-    background-color: rgb(224, 171, 189);
+    background-color: #d3a297;
     color: white;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
 }
 
-#letterCount, #charCount{
-    font-size: 1.4em;
+#imageContainer img {
+    display: none;
 }
 
+#imageContainer {
+    position: relative; 
+    height: 70vh;
+    width: 65vh;
+}
+
+#imageContainer img {
+    position: absolute; 
+    top: 0;
+    left: 0;
+}
+
+.image-style {
+    position: absolute;
+}
+
+#image1 {
+    z-index: 1; 
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 300px; 
+    height: auto; 
+
+}
+
+#image2 {
+    z-index: 2; 
+    margin-top: 280px;
+    margin-left: 170px;
+    width: 170px
+}
+
+#image3 {
+    z-index: 2; 
+    margin-top: 30px;
+    margin-left: 35px;
+    width: 450px;
+
+}
+
+#image4 {
+    z-index: 2; 
+    margin-top: 370px;
+    margin-left: 200px;
+
+}
+
+#image5 {
+    z-index: 2; 
+    margin-top: 350px;
+    margin-left: 230px;
+    width: 40px;
+}
+
+
+.hover-container {
+    position: relative;
+}
+
+button {
+    color: #d3a297;
+    background-color:#79645B;
+    font-weight: bold;
+}
+
+#unexpand {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    z-index: 1; 
+    color: #79645B;
+    background-color:#d3a297;
+    font-weight: bold;
+}
+
+button:hover {
+    border: 1px solid white;
+}
