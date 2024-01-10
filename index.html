@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mr Potato Head Maker</title>
+</head>
+<body>
+
+    <h2>Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" required><br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" placeholder="(416) 555-5555"><br><br>
+        <button type="button" onclick= "formValidator()" id="submitButton">Submit</button>
+    </form>
+    <div id="display"></div>
+
+    <br>
+    <hr>
+
+    <h2>Counter</h2>
+   
+    <textarea id="text" oninput="count()" rows="10" cols="40"></textarea>
+    <p>Letter Count: <span id="letterCount">0</span></p>
+    <p>Character Count: <span id="charCount">0</span></p>
+
+    <br>
+    <hr>
+
+    <h2>My Bookmarks</h2>
+
+    <ul id="bookmarks">
+
+    </ul>
+    
+</body>
+
+<script src="script.js"></script>
+
+</html>
